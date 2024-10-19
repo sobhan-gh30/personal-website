@@ -4,8 +4,8 @@ import HeaderSvgLinks from "../HeaderSvgLinks/HeaderSvgLinks"
 
 function Aside(){
     return(
-        <div className="h-36 md:h-44 xl:h-fit xl:w-3/12 w-full bg-zinc-900 border border-zinc-600 rounded-2xl pt-2 px-5 text-gray-200 flex justify-center items-center flex-row xl:flex-col">
-            <div className="w-full h-1/2 xl:border-b border-zinc-500 p-4 flex items-center justify-start xl:justify-around xl:gap-1 gap-x-2 xl:flex-col flex-row">
+        <div className="h-fit xl:w-3/12 w-full bg-zinc-900 border border-zinc-600 rounded-2xl pt-2 px-5 text-gray-200 flex justify-center items-center flex-col overflow-hidden transition">
+            <div className="w-full h-1/3 xl:h-1/2 xl:border-b border-zinc-500 p-4 flex items-center justify-start xl:justify-around xl:gap-1 gap-x-2 xl:flex-col flex-row">
                 <div className="xl:w-48 xl:h-48 md:h-36 md:w-36 w-24 h-24 rounded-xl overflow-hidden">
                     <img src={"IMG/Profile/Blue%20back%202.jpg"} alt="Profile"/>
                 </div>
@@ -14,13 +14,12 @@ function Aside(){
                     <p className="border-zinc-700 border bg-zinc-950 text-zinc-700 text-sm px-1 lg:px-2 py-0.5 rounded-sm flex items-center justify-center">برنامه نویس وب</p>
                 </div>
             </div>
-            <div className="w-full h-1/2 hidden md:flex p-5 justify-center items-start flex-col gap-2">
+            <div className="w-full hidden h-0 xl:h-1/2 md:grid-cols-2 xl:flex p-5 xl:justify-center xl:items-start flex-col gap-2 transition">
                 <Contact path1="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
                          path2="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
                          secondClass="bi-phone"
                          header="شماره تماس"
                          content="09360674391" />
-
 
                 <Contact path1="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
                          path2=""
@@ -39,6 +38,7 @@ function Aside(){
                          secondClass="bi-geo-alt"
                          header="محل زندگی"
                          content="Bushehr"/>
+
                 <HeaderSvgLinks />
             </div>
         </div>

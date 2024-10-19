@@ -2,7 +2,7 @@ import "../output.css"
 
 function HeaderSvgLinks(){
     return (
-        <div className="w-full h-10 flex justify-center items-center gap-5 px-3">
+        <div className="w-full h-20 xl:h-10 flex justify-start xl:justify-center items-center gap-5 px-3">
             <a href="https://www.youtube.com/@CodingWithSobhan" target="_blank" title="Youtube Channel">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-youtube hover:scale-105 transition" viewBox="0 0 16 16">
                     <path
