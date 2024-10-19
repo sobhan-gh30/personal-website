@@ -969,8 +969,16 @@ video {
     justify-content: space-around;
   }
 
+  .xl\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .xl\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .xl\:gap-0 {
+    gap: 0px;
   }
 
   .xl\:border-b {
